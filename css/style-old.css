@@ -77,12 +77,10 @@ a {
     box-shadow: none !important; }
 
 .site-section {
-  
-  padding: .5em 0; }
+  padding: 2.5em 0; }
   @media (min-width: 768px) {
     .site-section {
-      padding: 1em 0; 
-           } }
+      padding: 5em 0; } }
   .site-section.site-section-sm {
     padding: 4em 0; }
 
@@ -1147,411 +1145,219 @@ a {
   }
 
 
-
-
-
-
-   /* body {
-    font-family: Arial;
-    width: 600px;
-} */
-
-/* .form-container {
-    background: #f1ecdf;
-    border: #e2ddd2 1px solid;
-    padding: 20px;
-    border-radius: 2px;
-}
-
- .input-row {
-    margin-bottom:20%;
-}
-
-.input-row label {
-    color: #75726c;
-}
-
-.input-field {
-    width: 100%;
-    border-radius: 2px;
-    padding: 10px;
-    border: #e0dfdf 1px solid;
-    box-sizing: border-box;
-    margin-top: 2px;
-}
-
-.span-field {
-    font: Arial;
-    font-size: small;
-    text-decoration: none;
-}
-
-.btn-submit {
-    padding: 10px 60px;
-    background: #8d6915;
-    border: #8c8880 1px solid;
-    color: #ffffff;
-    font-size: 0.9em;
-    border-radius: 2px;
-    cursor: pointer;
-}
-
-.errorMessage {
-    background-color: #e66262;
-    border: #AA4502 1px solid;
-    padding: 5px 10px;
-    color: #FFFFFF;
-    border-radius: 3px;
-}
-
-.successMessage {
-    background-color: #9fd2a1;
-    border: #91bf93 1px solid;
-    padding: 5px 10px;
-    color: #3d503d;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 0.9em;
-}
-
-.info {
-    font-size: .8em;
-    color: #e66262;
-    letter-spacing: 2px;
-    padding-left: 5px;
-} 
-
-
-.row > .column {
-  padding: 0 8px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Create four equal columns that floats next to eachother */
-
-
-/* The Modal (background) */
-
-
-
-
-/* The Close Button */
-
-/* .close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-} */
-
-/* Hide the slides by default */
-
-
-/* Next & previous buttons */
-
-/* Position the "next button" to the right */
-
-
-/* On hover, add a black background color with a little bit see-through */
-
-
-/* Caption text */
-
-
-
-
-img.hover-shadow {
-  transition: 0.5s;
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-
-
-
-
-
-
-* {margin: 0; padding: 0;}
-
-
-.slider{
-	width: 640px; /*Same as width of the large image*/
-	position: relative;
-	/*Instead of height we will use padding*/
-	padding-top: 320px; /*That helps bring the labels down*/
-	
-	margin: 100px auto;
-	
-	/*Lets add a shadow*/
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
-}
-
-
-/*Last thing remaining is to add transitions*/
-.slider>img{
-	position: absolute;
-	left: 0; top: 0;
-	transition: all 0.5s;
-}
-
-.slider input[name='slide_switch'] {
-	display: none;
-}
-
-.slider label {
-	/*Lets add some spacing for the thumbnails*/
-	margin: 18px 0 0 18px;
-	border: 3px solid #999;
-	
-	float: left;
-	cursor: pointer;
-	transition: all 0.5s;
-	
-	/*Default style = low opacity*/
-	opacity: 0.6;
-}
-
-.slider label img{
-	display: block;
-}
-
-/*Time to add the click effects*/
-.slider input[name='slide_switch']:checked+label {
-	border-color: #666;
-	opacity: 1;
-}
-/*Clicking any thumbnail now should change its opacity(style)*/
-/*Time to work on the main images*/
-.slider input[name='slide_switch'] ~ img {
-	opacity: 0;
-	transform: scale(1.1);
-}
-/*That hides all main images at a 110% size
-On click the images will be displayed at normal size to complete the effect
-*/
-.slider input[name='slide_switch']:checked+label+img {
-	opacity: 1;
-	transform: scale(1);
-}
-/*Clicking on any thumbnail now should activate the image related to it*/
-
-.carousel-item {
-  height: 100vh;
-  min-height: 350px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*-Gallery section-*/
-
-.hello {
-  opacity: 1 !important;
-}
-.full {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-.full .content {
-  background-color: rgba(0,0,0,0.75) !important;
-  height: 100%;
-  width: 100%;
-  display: grid;
-}
-.full .content img {
-  left: 50%;
-  transform: translate3d(0, 0, 0);
-  animation: zoomin 1s ease;
-  max-width: 100%;
-  max-height: 100%;
-  margin: auto;
-}
-.byebye {
-  opacity: 0;
-}
-.byebye:hover {
-  transform: scale(0.2) !important;
-}
-.gallery {
-  display: grid;
-  grid-column-gap: 8px;
-  grid-row-gap: 8px;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-auto-rows: 8px;
-}
-.gallery img {
-  max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 0 16px #333;
-  transition: all 1.5s ease;
-}
-.gallery img:hover {
-  box-shadow: 0 0 32px #333;
-}
-.gallery .content {
-  padding: 4px;
-}
-.gallery .gallery-item {
-  transition: grid-row-start 300ms linear;
-  transition: transform 300ms ease;
-  transition: all 0.5s ease;
-  cursor: pointer;
-}
-.gallery .gallery-item:hover {
-  transform: scale(1.025);
-}
-@media (max-width: 600px) {
-  .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  img.hover-shadow {
+    transition: 0.5s;
   }
-}
-@media (max-width: 400px) {
-  .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-  }
-}
-@-moz-keyframes zoomin {
-  0% {
-    max-width: 50%;
-    transform: rotate(-30deg);
-    filter: blur(4px);
-  }
-  30% {
-    filter: blur(4px);
-    transform: rotate(-80deg);
-  }
-  70% {
-    max-width: 50%;
-    transform: rotate(45deg);
-  }
-  100% {
-    max-width: 100%;
-    transform: rotate(0deg);
-  }
-}
-@-webkit-keyframes zoomin {
-  0% {
-    max-width: 50%;
-    transform: rotate(-30deg);
-    filter: blur(4px);
-  }
-  30% {
-    filter: blur(4px);
-    transform: rotate(-80deg);
-  }
-  70% {
-    max-width: 50%;
-    transform: rotate(45deg);
-  }
-  100% {
-    max-width: 100%;
-    transform: rotate(0deg);
-  }
-}
-@-o-keyframes zoomin {
-  0% {
-    max-width: 50%;
-    transform: rotate(-30deg);
-    filter: blur(4px);
-  }
-  30% {
-    filter: blur(4px);
-    transform: rotate(-80deg);
-  }
-  70% {
-    max-width: 50%;
-    transform: rotate(45deg);
-  }
-  100% {
-    max-width: 100%;
-    transform: rotate(0deg);
-  }
-}
-@keyframes zoomin {
-  0% {
-    max-width: 50%;
-    transform: rotate(-30deg);
-    filter: blur(4px);
-  }
-  30% {
-    filter: blur(4px);
-    transform: rotate(-80deg);
-  }
-  70% {
-    max-width: 50%;
-    transform: rotate(45deg);
-  }
-  100% {
-    max-width: 100%;
-    transform: rotate(0deg);
-  }
-}
-
-
-
-/*-----image button */
-.imagebutton {
-  position: relative;
-  width: 100%;
-  max-width: 400px;
-}
-
-.imagebutton img {
-  width: 100%;
-  height: auto;
-}
-
-.imagebutton .btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #555;
-  color: rgb(0, 0, 0);
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: left;
-  opacity : 15%;
-  width: 100%;
-  height: 100%;
-}
-
-.imagebutton .btn:hover {
-  background-color: rgb(255, 255, 255);
-}
-
-.modal-content{
   
-  margin-top: 7%;
-}
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+
+
+   
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .zoom {
+    padding: 1px;
+    background-color: black;
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.6); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+
+
+
+
+
+
+
+
+
+  /* Gallery Section */
+  .hello {
+    opacity: 1 !important;
+  }
+  .full {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .full .content {
+    background-color: rgba(0,0,0,0.75) !important;
+    height: 100%;
+    width: 100%;
+    display: grid;
+  }
+  .full .content img {
+    left: 50%;
+    transform: translate3d(0, 0, 0);
+    animation: zoomin 1s ease;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+  }
+  .byebye {
+    opacity: 0;
+  }
+  .byebye:hover {
+    transform: scale(0.2) !important;
+  }
+  .gallery {
+    display: grid;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 8px;
+  }
+  .gallery img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 16px #333;
+    transition: all 1.5s ease;
+  }
+  .gallery img:hover {
+    box-shadow: 0 0 32px #333;
+  }
+  .gallery .content {
+    padding: 4px;
+  }
+  .gallery .gallery-item {
+    transition: grid-row-start 300ms linear;
+    transition: transform 300ms ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+  .gallery .gallery-item:hover {
+    transform: scale(1.025);
+  }
+  @media (max-width: 600px) {
+    .gallery {
+      grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    }
+  }
+  @media (max-width: 400px) {
+    .gallery {
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    }
+  }
+  @-moz-keyframes zoomin {
+    0% {
+      max-width: 50%;
+      transform: rotate(-30deg);
+      filter: blur(4px);
+    }
+    30% {
+      filter: blur(4px);
+      transform: rotate(-80deg);
+    }
+    70% {
+      max-width: 50%;
+      transform: rotate(45deg);
+    }
+    100% {
+      max-width: 100%;
+      transform: rotate(0deg);
+    }
+  }
+  @-webkit-keyframes zoomin {
+    0% {
+      max-width: 50%;
+      transform: rotate(-30deg);
+      filter: blur(4px);
+    }
+    30% {
+      filter: blur(4px);
+      transform: rotate(-80deg);
+    }
+    70% {
+      max-width: 50%;
+      transform: rotate(45deg);
+    }
+    100% {
+      max-width: 100%;
+      transform: rotate(0deg);
+    }
+  }
+  @-o-keyframes zoomin {
+    0% {
+      max-width: 50%;
+      transform: rotate(-30deg);
+      filter: blur(4px);
+    }
+    30% {
+      filter: blur(4px);
+      transform: rotate(-80deg);
+    }
+    70% {
+      max-width: 50%;
+      transform: rotate(45deg);
+    }
+    100% {
+      max-width: 100%;
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes zoomin {
+    0% {
+      max-width: 50%;
+      transform: rotate(-30deg);
+      filter: blur(4px);
+    }
+    30% {
+      filter: blur(4px);
+      transform: rotate(-80deg);
+    }
+    70% {
+      max-width: 50%;
+      transform: rotate(45deg);
+    }
+    100% {
+      max-width: 100%;
+      transform: rotate(0deg);
+    }
+  }
+  
+
